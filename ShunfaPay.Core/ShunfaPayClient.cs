@@ -99,7 +99,7 @@ public class ShunfaPayClient(
         {
             ["client_id"] = clientId,
             ["bill_number"] = order.FormId.ToString(),
-            ["amount"] = order.Amount.ToString(),
+            ["amount"] = order.Amount.ToString("#.##"),
             ["notify_url"] = order.CallbackUrl.AbsoluteUri,
             ["receiver_name"] = order.ReceiverName,
             ["receiver_account"] = order.ReceiverAccount,
